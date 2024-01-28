@@ -6,17 +6,18 @@ import Header from '../components/Header.astro';
 import Badge from '../components/Badge.astro';
 import Proyectos from '../components/Proyectos.astro';
 import Experiencia from '../components/Experiencia.astro';
+import AboutMe from '../components/AboutMe.astro';
 import GithubIcon from '../components/icons/GithubIcon.astro';
 ---
 
 <Layout title="Sergio Fernández Fernández">
 	<SectionContainer class="lg:fixed bg-back z-50">
 		<Header>
-			<Badge>
-				<span>Github</span>
+			<Badge link="https://github.com/zenix-s">
+				<span class="uppercase font-extrabold">Github</span>
 			</Badge>
-			<Badge class="bg-carrot" link="/sergioffdev.pdf">
-				<span>Get My CV</span>
+			<Badge link="/sergioffdev.pdf">
+				<span class="uppercase font-extrabold">Get My CV</span>
 			</Badge>
 		</Header>
 	</SectionContainer>
@@ -24,9 +25,9 @@ import GithubIcon from '../components/icons/GithubIcon.astro';
 		<Hero />
 	</SectionContainer>
 	<SectionContainer>
-		Desarrollador de software con conocimientos en diseño, desarrollo y pruebas de sistemas de software, dominio en desarrollo FullStack con tecnologías React, Tailwind, JavaScript/TypeScript, NextJs, PHP, Bases de datos SQL.
+		<AboutMe />
 	</SectionContainer>
-	<SectionContainer class="bg_pattern">
+	<SectionContainer class="bg_pattern py-4">
 		<a href="https://www.linkedin.com/in/sergioffdev/" target="_blank" rel="noopener noreferrer">
 			<span class="text-3xl text-white uppercase hover:text-carrot font-extrabold">
 				Visita mi perfil de Linkedin

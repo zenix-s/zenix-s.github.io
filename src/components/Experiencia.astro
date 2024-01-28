@@ -1,55 +1,79 @@
 ---
 const EXPERIENCIA = [
-	{
-		title: '42 Madrid',
-		tipo: 'Estudiante',
-		empresa: 'Fundación Telefónica',
-		fecha: '2023 - Actualidad',
-		descripcion: 'Estudiante de programación en la escuela 42 Madrid'
-	},
-	{
-		title: 'Desarrollador Software',
-		tipo: 'Prácticas',
-		empresa: 'Wetaxi Madrid',
-		fecha: 'Marzo 2023 - Junio 2023',
-		descripcion: 'Desarrollo de aplicaciones para la gestión de talleres de reparación de vehículos'
-	},
-	{
-		title: 'Formación Profesional Desarrollo de Aplicaciones Multiplataforma',
-		tipo: 'Estudiante',
-		empresa: 'Centro Europeo de Estudios Profesionales',
-		fecha: '2021 - 2023',
-		descripcion: 'Estudiante de FP Desarrollo de Aplicaciones Multiplataforma'
-	},
-	{
-		title: 'Desarrollador Web',
-		tipo: 'Prácticas',
-		empresa: 'Vortex Dimensión Digital',
-		fecha: 'Marzo 2021 - Junio 2021',
-		descripcion: 'Desarrollo de paginas web con Wordpress'
-	},
-	{
-		title: 'Formación Profesional Sistemas Microinformáticos y Redes',
-		tipo: 'Estudiante',
-		empresa: 'CESUR Madrid',
-	}
-]
+  {
+    title: "42 Madrid",
+    tipo: "Estudiante",
+    empresa: "Fundación Telefónica",
+    fecha: "2024 - Actualidad",
+    descripcion: "Estudiante de programación en la escuela 42 Madrid",
+  },
+  {
+    title: "Formación Profesional Desarrollo de Aplicaciones Web",
+    tipo: "Estudiante",
+    empresa: "UNIR",
+    fecha: "2023 - 2024",
+    descripcion: "Estudiante de FP Desarrollo de Aplicaciones Web",
+  },
+  {
+    title: "Desarrollador Software",
+    tipo: "Prácticas",
+    empresa: "Wetaxi Madrid",
+    fecha: "Marzo 2023 - Junio 2023",
+    descripcion:
+      "Desarrollo de aplicaciones para la gestión de talleres de reparación de vehículos",
+  },
+  {
+    title: "Formación Profesional Desarrollo de Aplicaciones Multiplataforma",
+    tipo: "Estudiante",
+    empresa: "Centro Europeo de Estudios Profesionales",
+    fecha: "2021 - 2023",
+    descripcion: "Estudiante de FP Desarrollo de Aplicaciones Multiplataforma",
+  },
+  {
+    title: "Desarrollador Web",
+    tipo: "Prácticas",
+    empresa: "Vortex Dimensión Digital",
+    fecha: "Marzo 2021 - Junio 2021",
+    descripcion: "Desarrollo de paginas web con Wordpress",
+  },
+  {
+    title: "Formación Profesional Sistemas Microinformáticos y Redes",
+    tipo: "Estudiante",
+    empresa: "CESUR Madrid",
+    fecha: "2019 - 2021",
+    descripcion: "Estudiante de FP Sistemas Microinformáticos y redes",
+  },
+];
 ---
-<div>
-	Experiencia
 
-	{
-		EXPERIENCIA.map((item, index) => {
-			return (
-				<div>
-					<h3>{item.title}</h3>
-					<div class="flex">
-						<p>{item.tipo}</p>
-						<p>{item.fecha}</p>
-					</div>
-					<p>{item.empresa}</p>
-				</div>
-			)
-		})
-	}
+<div class="pb-5 w-full">
+  <div class="w-full flex justify-center bg_2pattern py-1">
+    <h2 class="
+			text-white 
+			text-5xl 
+			font-extrabold
+			uppercase
+			text_shadow
+		">
+      Experiencia
+    </h2>
+  </div>
+  <div class="flex px-4 pt-7 pb-16 flex-col gap-6">
+    {
+      EXPERIENCIA.map((item, index) => {
+        return (
+          <div>
+            <h3 class=" text-2xl text-white font-bold">
+              {item.tipo}
+              {item.title}
+            </h3>
+            <p class="text-white font-bold">{item.fecha}</p>
+            <p class="text-white">{item.empresa}</p>
+            <p class="text-white">{item.descripcion}</p>
+          </div>
+        );
+      })
+    }
+  </div>
 </div>
+
