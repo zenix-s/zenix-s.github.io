@@ -1,0 +1,26 @@
+---
+import SectionContainer from "./SectionContainer.astro";
+import '@fontsource/style-script';
+---
+
+<header class="border-white/20 border max-w-7xl flex justify-between w-full items-center">
+	<div>
+		<a class="text-white logo text-3xl">
+			<span>
+				Zenix-S
+			</span>
+			<span>
+				Sergio Fernández
+			</span>
+		</a>
+	</div>
+	<div class="flex gap-2">
+		<slot />
+	</div>
+</header>
+
+<style>
+	.logo {
+		font-family: 'Style Script', cursive;
+	}
+</style>

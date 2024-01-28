@@ -1,0 +1,60 @@
+---
+import GithubIcon from "./icons/GithubIcon.astro"
+
+
+
+const TAGS = {
+	Github: {
+		name: "Github",
+		icon: GithubIcon
+	},
+	Next: {
+		name: "Next",
+		icon: GithubIcon
+	},
+	Tailwind: {
+		name: "Tailwind",
+		icon: GithubIcon
+	},
+}
+
+const PROYECTOS = [
+	{
+		Titulo: "Varbas - Gestión de proyectos en grupo",
+		Descripcion: "Aplicación web para la gestión de proyectos en grupo",
+		Tags: [TAGS.Github]
+	}
+]
+---
+
+<div class="flex flex-col">
+	<h2>
+		Proyectos
+	</h2>
+	<div>
+		{
+			PROYECTOS.map((proyecto) => (
+				<div class="flex flex-col">
+					<h3>
+						{proyecto.Titulo}
+					</h3>
+					<p>
+						{proyecto.Descripcion}
+					</p>
+					<div class="flex flex-row">
+						{
+							proyecto.Tags.map((tag) => (
+								<div class="flex flex-row">
+									<tag.icon />
+									<p>
+										{tag.name}
+									</p>
+								</div>
+							))
+						}
+					</div>
+				</div>
+			))
+		}
+	</div>
+</div>
