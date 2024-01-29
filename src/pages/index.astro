@@ -1,43 +1,42 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import SectionContainer from '../components/SectionContainer.astro';
-import Hero from '../components/Hero.astro';
-import Header from '../components/Header.astro';
-import Badge from '../components/Badge.astro';
-import Proyectos from '../components/Proyectos.astro';
-import Experiencia from '../components/Experiencia.astro';
-import AboutMe from '../components/AboutMe.astro';
-import GithubIcon from '../components/icons/GithubIcon.astro';
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Hero from "../components/Hero.astro";
+import Header from "../components/Header.astro";
+import Badge from "../components/Badge.astro";
+import Proyectos from "../components/Proyectos.astro";
+import Experiencia from "../components/Experiencia.astro";
+import AboutMe from "../components/AboutMe.astro";
+import GithubIcon from "../components/icons/GithubIcon.astro";
 ---
 
 <Layout title="Sergio Fernández Fernández">
-	<SectionContainer class="lg:fixed bg-back z-50">
-		<Header>
-			<Badge link="https://github.com/zenix-s">
-				<span class="uppercase font-extrabold">Github</span>
-			</Badge>
-			<Badge link="/sergioffdev.pdf">
-				<span class="uppercase font-extrabold">Get My CV</span>
-			</Badge>
+  <SectionContainer class="lg:fixed bg-back z-50">
+    <Header>
+
 		</Header>
-	</SectionContainer>
-	<SectionContainer class="bg_pattern">
-		<Hero />
-	</SectionContainer>
-	<SectionContainer>
-		<AboutMe />
-	</SectionContainer>
-	<SectionContainer class="bg_pattern py-4">
-		<a href="https://www.linkedin.com/in/sergioffdev/" target="_blank" rel="noopener noreferrer">
-			<span class="text-3xl text-white uppercase hover:text-carrot font-extrabold">
-				Visita mi perfil de Linkedin
-			</span>
-		</a>.
-	</SectionContainer>
-	<SectionContainer class="">
-		<Proyectos />
-	</SectionContainer>
-	<SectionContainer>
-		<Experiencia />
-	</SectionContainer>
+  </SectionContainer>
+  <SectionContainer class="bg_pattern">
+    <Hero />
+  </SectionContainer>
+  <SectionContainer>
+    <AboutMe />
+  </SectionContainer>
+  <SectionContainer class="bg_pattern py-4 flex-col md:flex-row items-center">
+    <Badge link="https://github.com/zenix-s">
+      <span class="uppercase font-extrabold">Github</span>
+    </Badge>
+    <Badge link="/sergioffdev.pdf">
+      <span class="uppercase font-extrabold">Get My CV</span>
+    </Badge>
+    <Badge link="https://www.linkedin.com/in/sergioffdev/">
+      <span class="uppercase font-extrabold">LindedIn</span>
+    </Badge>
+  </SectionContainer>
+  <SectionContainer>
+    <Proyectos />
+  </SectionContainer>
+  <SectionContainer>
+    <Experiencia />
+  </SectionContainer>
 </Layout>
