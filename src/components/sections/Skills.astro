@@ -1,0 +1,39 @@
+---
+import SectionContainer from "@/components/SectionContainer.astro";
+import { skills } from "@cv";
+import Html from "@/icons/html.astro";
+import Css from "@/icons/css.astro";
+import Javascript from "@/icons/javascript.astro";
+import React from "@/icons/react.astro";
+import Node from "@/icons/node.astro";	
+import Typescript from "@/icons/type.astro";
+import MySQL from "@/icons/sql.astro";
+import Git from "@/icons/git.astro";
+import GithubIcon from "@/icons/GithubIcon.astro";
+import Next from "@/icons/next.astro";
+
+const skillIcons = {
+	html: <Html />,
+	css: <Css />,
+	javascript: <Javascript />,
+	react: <React />,
+	node: <Node />,
+	typescript: <Typescript />,
+	mysql: <MySQL />,
+	git: <Git />,
+	github: <GithubIcon />,
+	next: <Next />
+}
+---
+
+<SectionContainer title="Skills">
+	{
+		skills.map((skill) => {
+			return (
+				<div>
+					<h3>{skill.name}</h3>
+				</div>
+			)
+		})
+	}
+</SectionContainer>

@@ -1,9 +1,17 @@
 ---
+const { title } = Astro.props;
 const { class: className } = Astro.props;
 ---
 
-<section class={`flex justify-center w-full`}>
-	<div class={`border-white/20 border-x border-b max-w-7xl flex justify-center w-full ${className}`}>
-		<slot />
-	</div>
+<section class={`flex flex-col max-w-5xl w-full border-white/30 border pb-8 ${className}`}>
+  {
+    title && (
+      <div class="w-full flex justify-start py-1">
+        <h2 class="text-white text-4xl font-extrabold uppercase">
+          {title}
+        </h2>
+      </div>
+    )
+  }
+  <slot />
 </section>

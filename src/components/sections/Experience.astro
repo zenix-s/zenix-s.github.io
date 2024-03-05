@@ -1,0 +1,19 @@
+---
+import SectionContainer from "@/components/SectionContainer.astro";
+import { work } from "@cv"
+---
+
+<SectionContainer title="Experiencia">
+	{
+		work.map((job) => {
+			return (
+				<div class="mb-8">
+					<h3 class="text-2xl font-bold">{job.name}</h3>
+					<p class="text-gray-600">{job.position}</p>
+					<p class="text-gray-600">{job.startDate} - {job.endDate}</p>
+					<p class="mt-4">{job.summary}</p>
+				</div>
+			)
+		})
+	}
+</SectionContainer>

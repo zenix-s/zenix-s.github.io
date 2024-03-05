@@ -1,0 +1,24 @@
+---
+import SectionContainer from "@/components/SectionContainer.astro";
+import { basics } from "@cv";
+---
+
+<SectionContainer>
+  <div class="flex justify-center items-center h-full pt-2">
+    {
+      basics.profiles.map((profile) => {
+        return (
+          <a
+            href={profile.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mr-4"
+          >
+						
+            {profile.network}
+          </a>
+        );
+      })
+    }
+  </div>
+</SectionContainer>

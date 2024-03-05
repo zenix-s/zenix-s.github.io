@@ -1,23 +1,23 @@
 ---
 import SectionContainer from "./SectionContainer.astro";
-import '@fontsource/style-script';
+import "@fontsource/style-script";
 ---
 
-<header class="border-white/20 border max-w-7xl flex justify-between w-full items-center">
-	<div>
-		<a href="#" class="text-white text-3xl">
-			<span class="font-extrabold uppercase">
-				zenix-s
-			</span>
-		</a>
-	</div>
-	<div class="flex gap-2">
-		<slot />
-	</div>
+<header
+  class="border-white/20 border max-w-5xl flex justify-between w-full items-center mx-auto"
+>
+  <div>
+    <a href="#" class="text-white text-3xl">
+      <span class="font-extrabold uppercase"> zenix-s</span>
+    </a>
+  </div>
+  <div class="flex gap-2">
+    <slot />
+  </div>
 </header>
 
 <style>
-	.logo {
-		font-family: 'Style Script', cursive;
-	}
+  .logo {
+    font-family: "Style Script", cursive;
+  }
 </style>

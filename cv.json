@@ -1,0 +1,224 @@
+{
+  "basics": {
+    "name": "Sergio Fernández",
+		"role": "Full Stack Developer",
+    "label": "42 Student || Full Stack Developer || ReactJs Angular NodeJs Tailwind Git",
+    "image": "",
+    "email": "sergioffdev@gmail.com",
+    "phone": "+34644300944",
+    "url": "https://zenix-s.github.io/",
+    "summary": "Desarrollador de software con conocimientos en diseño, desarrollo y pruebas de sistemas de software, dominio en desarrollo FullStack con tecnologías como React, Tailwind, TypeScript, NodeJs, NextJs, PHP, MySql, C#. Capacidad de adaptación a distintos entornos. Excelentes habilidades de trabajo en equipo y la destreza para desarrollar proyectos individualmente.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Madrid",
+      "countryCode": "ES",
+      "region": "España"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Sergio Fernández Fernández",
+        "url": "https://linkedin.com/in/sergioffdev"
+      },
+      {
+        "network": "GitHub",
+        "username": "zenix-s",
+        "url": "https://github.com/zenix-s"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Practicas en Desarrollo fullstack en WeTaxi Madrid",
+      "position": "Desarrollador FullStack Practicas",
+      "url": "",
+      "startDate": "2023-03-01",
+      "endDate": "2023-07-01",
+      "summary": "Durante mis practicas en la empresa, he trabajado en el desarrollo de una aplicación web interna para la gestión de los recursos de la empresa. He trabajado en el desarrollo de la aplicación web con tecnologías como PHP, MySql, JavaScript, HTML, CSS, Git",
+      "highlights": [""]
+    },
+    {
+      "name": "Practicas Desarrollo Frontend en Vortex Dimension Digital",
+      "position": "Desarrollador Frontend Practicas",
+      "url": "",
+      "startDate": "2021-03-01",
+      "endDate": "2021-07-01",
+      "summary": "Durante mis practicas en la empresa, he trabajo en el desarrollo de paginas web con wordpress, he trabajado en el desarrollo de la aplicación web con tecnologías como PHP, MySql, JavaScript, HTML, CSS, Git",
+      "highlights": [""]
+    }
+  ],
+  "education": [
+    {
+      "institution": "42 Madrid Fundación Telefónica",
+      "url": "https://www.42madrid.com/",
+      "area": "Desarrollo de Software",
+      "studyType": "",
+      "startDate": "2023-12-06",
+      "endDate": null,
+      "score": "",
+      "courses": [""]
+    },
+    {
+      "institution": "UNIR",
+      "url": "https://www.unir.net/",
+      "area": "Desarrollo de Aplicaciones Web",
+      "studyType": "Formación Profesional",
+      "startDate": "2023-09-01",
+      "endDate": "2024-06-01",
+      "score": "",
+      "courses": [""]
+    },
+    {
+      "institution": "Centro Europeo de Estudios Profesionales",
+      "url": "https://www.cees.es/",
+      "area": "Desarrollo de Aplicaciones Multiplataforma",
+      "studyType": "Formación Profesional",
+      "startDate": "2021-09-01",
+      "endDate": "2023-06-01",
+      "score": "",
+      "courses": [""]
+    },
+    {
+      "institution": "CESUR Madrid",
+      "url": "https://www.cesurformacion.com/",
+      "area": "Sistemas Microinformáticos y Redes",
+      "studyType": "Formación Profesional",
+      "startDate": "2019-09-01",
+      "endDate": "2021-06-01",
+      "score": "",
+      "courses": [""]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Varbas - Gestión de proyectos colaborativos",
+      "isActive": false,
+      "description": "Varbas es una aplicación web que ayuda a equipos de trabajo a gestionar proyectos y tareas de manera efectiva y eficiente. La aplicación está diseñada para permitir a los equipos crear, asignar, rastrear y completar tareas de manera organizada y colaborativa.",
+      "tags": ["NextJs", "Tailwind", "React", "Typescript", "NodeJs"],
+      "highlights": ["", ""],
+      "url": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Advanced",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "React",
+      "level": "Medium",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "NextJs",
+      "level": "Basic",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Medium",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "NodeJs",
+      "level": "Basic",
+      "keywords": ["Desarrollo Web", "Backend"]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Medium",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "PHP",
+      "level": "Basic",
+      "keywords": ["Desarrollo Web", "Backend"]
+    },
+    {
+      "name": "MySql",
+      "level": "Medium",
+      "keywords": ["Desarrollo Web", "Backend"]
+    },
+    {
+      "name": "C#",
+      "level": "Basic",
+      "keywords": ["Desarrollo Web", "Backend"]
+    },
+    {
+      "name": "Git",
+      "level": "Medium",
+      "keywords": ["Desarrollo Web", "Backend"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "Medio - B2"
+    }
+  ],
+  "interests": [
+    {
+      "name": "",
+      "keywords": ["", ""]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "",
+      "position": "",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [""]
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "certificates": [
+    {
+      "name": "",
+      "date": "",
+      "issuer": "",
+      "url": ""
+    }
+  ],
+  "publications": [
+    {
+      "name": "",
+      "publisher": "",
+      "releaseDate": "",
+      "url": "",
+      "summary": ""
+    }
+  ],
+
+  "references": [
+    {
+      "name": "",
+      "reference": ""
+    }
+  ]
+}
