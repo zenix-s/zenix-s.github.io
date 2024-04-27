@@ -1,40 +1,126 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import SectionContainer from "../components/SectionContainer.astro";
-import Hero from "../components/Hero.astro";
-import Header from "../components/Header.astro";
-import Badge from "../components/Badge.astro";
-import Proyectos from "../components/Proyectos.astro";
-import Experiencia from "../components/Experiencia.astro";
-import AboutMe from "../components/AboutMe.astro";
-import GithubIcon from "../components/icons/GithubIcon.astro";
+import { getCollection } from "astro:content";
+import { dateRange } from "@/lib/utils";
+
+import Layout from "@/layouts/Layout.astro";
+import PostCard from "@/components/PostCard.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
+import SocialLinks from "@/components/SocialLinks.astro";
+import Link from "@/components/shared/Link.astro";
+
+import { basics, projects, experience } from "@cv";
+import ExpirienceCard from "@/components/ExpirienceCard.astro";
+
+const posts = (await getCollection("posts")).sort((a: any, b: any) => {
+  return b.data.publishedAt - a.data.publishedAt;
+});
 ---
 
 <Layout title="Sergio Fernández Fernández">
-    <SectionContainer class="lg:fixed bg-back z-50">
-        <Header />
-    </SectionContainer>
-    <SectionContainer class="bg_pattern">
-        <Hero />
-    </SectionContainer>
-    <SectionContainer>
-        <AboutMe />
-    </SectionContainer>
-    <SectionContainer class="bg_pattern py-4 flex-col md:flex-row items-center">
-        <Badge link="https://github.com/zenix-s">
-            <span class="uppercase font-extrabold">Github</span>
-        </Badge>
-        <Badge link="/sergioffdev.pdf">
-            <span class="uppercase font-extrabold">Get My CV</span>
-        </Badge>
-        <Badge link="https://www.linkedin.com/in/sergioffdev/">
-            <span class="uppercase font-extrabold">Linkedin</span>
-        </Badge>
-    </SectionContainer>
-    <SectionContainer>
-        <Proyectos />
-    </SectionContainer>
-    <SectionContainer>
-        <Experiencia />
-    </SectionContainer>
+  <main class="flex flex-col gap-20">
+    <article
+      class="flex flex-col gap-8 md:flex-row-reverse md:justify-end md:gap-12"
+    >
+      <div class="flex flex-col gap-8">
+        <h1 class="text-3xl text-neutral-100">
+          {basics.label}
+        </h1>
+
+        <!-- <h2
+          class="w-auto max-w-[60ch] leading-6"
+          set:html={convertAsteriskToStrongTag(presentation.description)}
+        /> -->
+        <h2 class="w-auto max-w-[60ch] leading-6">
+          {basics.summary}
+        </h2>
+
+        <SocialLinks />
+      </div>
+    </article>
+
+    <!-- EXPERIENCE -->
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="text-lg text-neutral-100">
+          Experience ({experience.length})
+        </h3>
+        <Link
+          href="/experience"
+          label="See all experience"
+          isUnderline
+          target="_self"
+        />
+      </header>
+      {experience.length === 0 && <p>¿Y la experiencia?</p>}
+
+      <section class="flex flex-col gap-8">
+        {
+          experience.length !== 0 &&
+            experience.slice(0, 2).map((exp) => <ExpirienceCard {...exp} />)
+        }
+      </section>
+    </article>
+
+    <!-- PROJECTS -->
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="text-lg text-neutral-100">
+          Projects ({projects.length})
+        </h3>
+        <Link
+          href="/projects"
+          label="See all projects"
+          isUnderline
+          target="_self"
+        />
+      </header>
+      {projects.length === 0 && <p>A trabajar vago</p>}
+
+      <section class="flex flex-col gap-4">
+        {
+          projects.length !== 0 &&
+            projects.slice(0, 2).map((project) => <ProjectCard {...project} />)
+        }
+      </section>
+    </article>
+
+    <!-- POSTS -->
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="text-lg text-neutral-100">Latest posts</h3>
+        <Link href="/posts" label="See all posts" isUnderline target="_self" />
+      </header>
+      {posts.length === 0 && <p>Comoo???, pues comiendo lomo</p>}
+
+      <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
+        {
+          posts.length !== 0 &&
+            posts
+              .slice(0, 2)
+              .map((post: any) => (
+                <PostCard
+                  publishedAt={post.data.publishedAt}
+                  title={post.data.title}
+                  description={post.data.description}
+                  slug={post.slug}
+                />
+              ))
+        }
+      </section>
+    </article>
+
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="text-lg text-neutral-100">Get in touch</h3>
+      </header>
+      <p>
+        Email me at <Link
+          href={`mailto:${basics.email}`}
+          label={basics.email}
+        /> or follow me via my social links.
+      </p>
+
+      <SocialLinks />
+    </article>
+  </main>
 </Layout>

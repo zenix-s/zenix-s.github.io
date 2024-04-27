@@ -1,0 +1,103 @@
+{
+  "basics": {
+    "name": "Sergio Fernández Fernández",
+    "label": "Saludos viajero, soy Sergio Fernández",
+    "picture": "https://avatars.githubusercontent.com/u/80365583?v=4",
+    "email": "sergioffdev@gmail.com",
+    "phone": "+34 666 666 666",
+    "url": "https://zenix-s.github.io",
+		"summary": "Siendo un apasionado de la programación y la tecnología, me he envarcado en un viaje que me ha llevado a estudiar programación en 42 Madrid y a especializarme en el desarrollo backend y frontend. Actualmente trabajo como desarrollador Front End en Neoris.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Madrid",
+      "countryCode": "ES",
+      "region": "Madrid"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "zenix-s",
+        "url": "https://github.com/zenix-s"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "sergio-fernandez-fernandez",
+        "url": "https://www.linkedin.com/in/sergioffdev"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "title": "42 Madrid Student",
+      "company": "Fundación Telefónica",
+      "location": "Madrid",
+      "startDate": "2023-11-01",
+      "endDate": null,
+      "summary": "Student of programming at 42 Madrid",
+      "highlights": ["Programming", "Problem solving", "Teamwork"]
+    },
+    {
+      "title": "Junior Front End Developer Angualr",
+      "company": "Neoris",
+      "location": "Madrid",
+      "startDate": "2024-04-01",
+      "endDate": null,
+      "summary": "Development of web applications with Angular, HTML, CSS and JavaScript",
+      "highlights": ["Angular", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Web Development Training - FP Desarrollo de Aplicaciones Web",
+      "company": "UNIR",
+      "location": "Madrid",
+      "startDate": "2023-01-01",
+      "endDate": "2024-01-01",
+      "summary": "Student of Web Development Training",
+      "highlights": ["Web Development", "Java", "Spring Boot", "MySQL"]
+    },
+    {
+      "title": "Backend Developer",
+      "company": "Wetaxi Madrid",
+      "location": "Madrid",
+      "startDate": "2023-03-01",
+      "endDate": "2023-06-01",
+      "summary": "Development of applications for the management of vehicle repair shops",
+      "highlights": ["PHP", "SQL"]
+    },
+    {
+      "title": "Software Development Training - FP Desarrollo de Aplicaciones Multiplataforma",
+      "company": "Centro Europeo de Estudios Profesionales",
+      "location": "Madrid",
+      "startDate": "2021-01-01",
+      "endDate": "2023-01-01",
+      "summary": "Student of Software Development Training",
+      "highlights": ["Web Development", "Java", "PHP", "MySQL", "C"]
+    },
+    {
+      "title": "Web Developer",
+      "company": "Vortex Dimensión Digital",
+      "location": "Madrid",
+      "startDate": "2021-03-01",
+      "endDate": "2021-06-01",
+      "summary": "Development of web pages with Wordpress",
+      "highlights": ["Wordpress", "HTML", "CSS"]
+    },
+    {
+      "title": "FP Sistemas Microinformáticos y Redes",
+      "company": "CESUR Madrid",
+      "location": "Madrid",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "summary": "Student of Web Development Training",
+      "highlights": ["Web Development", "Java", "Spring Boot", "MySQL"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Varbas - Gestión de proyectos colaborativos",
+      "description": "Varbas es una aplicación web que ayuda a equipos de trabajo a gestionar proyectos y tareas de manera efectiva y eficiente. La aplicación está diseñada para permitir a los equipos crear, asignar, rastrear y completar tareas de manera organizada y colaborativa.",
+      "url": "",
+      "highlights": ["Angular", "NodeJS", "ExpresJS", "MySQL"]
+    }
+  ]
+}

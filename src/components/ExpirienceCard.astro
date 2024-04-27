@@ -1,0 +1,14 @@
+---
+const { company, startDate, endDate, summary } = Astro.props;
+import { dateRange } from "@/lib/utils";
+---
+
+<div class="flex flex-col gap-2">
+  <p class="text-neutral-200">
+    {dateRange(startDate, endDate)}
+  </p>
+  <h4 class="text-lg text-neutral-100 font-bold">
+    {company}
+  </h4>
+  <p class="text-neutral-200">{summary}</p>
+</div>

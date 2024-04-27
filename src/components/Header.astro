@@ -1,23 +1,45 @@
 ---
-import SectionContainer from "./SectionContainer.astro";
-import '@fontsource/style-script';
+import { basics } from "@cv";
+const { email } = basics;
+import { removeTrailingSlash } from "@/lib/utils";
+
+const pathname = removeTrailingSlash(Astro.url.pathname);
 ---
 
-<header class="border-white/20 border max-w-7xl flex justify-between w-full items-center">
-	<div>
-		<a href="#" class="text-white text-3xl">
-			<span class="font-extrabold uppercase">
-				zenix-s
-			</span>
-		</a>
-	</div>
-	<div class="flex gap-2">
-		<slot />
-	</div>
+<header class="z-40 flex w-full flex-col gap-2 md:flex-row md:justify-between">
+  <a
+    href={`mailto:${email}`}
+    class="hover:text-neutral-100"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {email}
+  </a>
+  <nav role="navigation">
+    <ul role="list" class="flex flex-row gap-2">
+      <li>
+        <a
+          href="/"
+          class:list={{
+            ["hover:text-neutral-100"]: true,
+            ["text-neutral-100"]: pathname === "/",
+          }}
+        >
+          Home
+        </a>
+      </li>
+      <li>/</li>
+      <li>
+        <a
+          href="/posts"
+          class:list={{
+            ["hover:text-neutral-100"]: true,
+            ["text-neutral-100"]: pathname === "/posts",
+          }}
+        >
+          Posts
+        </a>
+      </li>
+    </ul>
+  </nav>
 </header>
-
-<style>
-	.logo {
-		font-family: 'Style Script', cursive;
-	}
-</style>

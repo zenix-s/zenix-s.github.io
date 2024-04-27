@@ -1,0 +1,18 @@
+---
+import Link from "@/components/shared/Link.astro";
+import { basics } from "@cv";
+const { profiles } = basics;
+---
+
+<ul role="list" class="flex flex-row gap-2">
+  {
+    profiles.map((profile, index) => (
+      <>
+        <li>
+          <Link href={profile.url} label={profile.network} />
+        </li>
+        {index < profiles.length - 1 && <li> • </li>}
+      </>
+    ))
+  }
+</ul>
