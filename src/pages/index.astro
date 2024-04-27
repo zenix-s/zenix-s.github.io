@@ -12,7 +12,7 @@ import { basics, projects, experience } from "@cv";
 import ExpirienceCard from "@/components/ExpirienceCard.astro";
 
 const posts = (await getCollection("posts")).sort((a: any, b: any) => {
-  return b.data.publishedAt - a.data.publishedAt;
+  return b.data.publishDate - a.data.publishDate;
 });
 ---
 
@@ -87,7 +87,7 @@ const posts = (await getCollection("posts")).sort((a: any, b: any) => {
     <!-- POSTS -->
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Latest posts</h3>
+        <h3 class="text-lg text-neutral-100">Posts</h3>
         <Link href="/posts" label="See all posts" isUnderline target="_self" />
       </header>
       {posts.length === 0 && <p>Comoo???, pues comiendo lomo</p>}
@@ -99,7 +99,7 @@ const posts = (await getCollection("posts")).sort((a: any, b: any) => {
               .slice(0, 2)
               .map((post: any) => (
                 <PostCard
-                  publishedAt={post.data.publishedAt}
+                  publishDate={post.data.publishDate}
                   title={post.data.title}
                   description={post.data.description}
                   slug={post.slug}

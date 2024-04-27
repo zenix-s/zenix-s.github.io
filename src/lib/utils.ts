@@ -8,3 +8,7 @@ export function dateRange(startDate: string, endDate: string | null): string {
 	if (!endDate) return startDate + ' - Present';
 	return `${startDate} - ${endDate}`;
 }
+
+export function formatDate(date: Date): String {
+	return new Intl.DateTimeFormat('es-ES').format(date);
+}

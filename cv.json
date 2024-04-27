@@ -96,7 +96,7 @@
     {
       "title": "Varbas - Gestión de proyectos colaborativos",
       "description": "Varbas es una aplicación web que ayuda a equipos de trabajo a gestionar proyectos y tareas de manera efectiva y eficiente. La aplicación está diseñada para permitir a los equipos crear, asignar, rastrear y completar tareas de manera organizada y colaborativa.",
-      "url": "",
+      "url": "https://github.com/zenix-s/project_manager_angular",
       "highlights": ["Angular", "NodeJS", "ExpresJS", "MySQL"]
     }
   ]
